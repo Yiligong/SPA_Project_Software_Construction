@@ -1,0 +1,65 @@
+.post {
+    display: flex;
+    overflow: hidden;
+    margin: 20px 0;
+    background-color: white;
+    border: 1px solid var(--reddit-grey);
+}
+
+.post .vote {
+    width: 35px;
+    background-color: var(--reddit-light-grey);
+}
+
+.post .vote :hover {
+    cursor: pointer;
+}
+
+.post .content {
+    padding: 10px;
+}
+
+.post-title {
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.post-author {
+    margin: 5px 0;
+    font-size: 12px;
+    color: var(--reddit-blue);
+}
+
+.post .heart:before {
+    content: '\2661';
+    color: red;
+    font-size: 20px;
+}
+
+.post .heart:hover::before {
+    content: '\2665';
+    color: red;
+    font-size: 20px;
+}
+
+.post .heart_like:before {
+    content: '\2665';
+    color: red;
+    font-size: 20px;
+}
+
+.post .heart_like:hover:before {
+    content: '\2665';
+    color: red;
+    font-size: 20px;
+}
+
+.post .popup {
+    visibility: hidden;
+    width: 160px;
+    background-color: var(--reddit-blue);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+}
